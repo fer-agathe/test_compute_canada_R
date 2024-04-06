@@ -6,6 +6,6 @@
 #SBATCH --mail-user=fernandes_machado.agathe@courrier.uqam.ca
 #SBATCH --mail-type=ALL
 
-myprojects/test_computecanada_R
 module load gcc/9.3.0 r/4.1.2
 export R_LIBS=~/.local/R/$EBVERSIONR/
+R CMD BATCH --no-save --no-restore ../main/script.R
